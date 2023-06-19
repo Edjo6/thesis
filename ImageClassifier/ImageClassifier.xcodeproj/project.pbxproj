@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0CCFD72A1E456C00EBADEB /* ContentViewModelCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0CCFD62A1E456C00EBADEB /* ContentViewModelCloud.swift */; };
+		4BFB5A3D2A052F1F006CA1BB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB5A3C2A052F1F006CA1BB /* ContentViewModel.swift */; };
+		4BFB5A7C2A17736E006CA1BB /* 300E.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4BFB5A7B2A17736E006CA1BB /* 300E.mlmodel */; };
 		7C8D0B0E29FBC54100D2EFFE /* ImageClassifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D0B0D29FBC54100D2EFFE /* ImageClassifierApp.swift */; };
 		7C8D0B1029FBC54100D2EFFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D0B0F29FBC54100D2EFFE /* ContentView.swift */; };
 		7C8D0B1229FBC54200D2EFFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D0B1129FBC54200D2EFFE /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B0CCFD62A1E456C00EBADEB /* ContentViewModelCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelCloud.swift; sourceTree = "<group>"; };
+		4BFB5A3C2A052F1F006CA1BB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4BFB5A7B2A17736E006CA1BB /* 300E.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = 300E.mlmodel; sourceTree = "<group>"; };
 		7C8D0B0A29FBC54100D2EFFE /* ImageClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8D0B0D29FBC54100D2EFFE /* ImageClassifierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifierApp.swift; sourceTree = "<group>"; };
 		7C8D0B0F29FBC54100D2EFFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,10 +100,13 @@
 		7C8D0B0C29FBC54100D2EFFE /* ImageClassifier */ = {
 			isa = PBXGroup;
 			children = (
+				4BFB5A7B2A17736E006CA1BB /* 300E.mlmodel */,
 				7C8D0B0D29FBC54100D2EFFE /* ImageClassifierApp.swift */,
 				7C8D0B0F29FBC54100D2EFFE /* ContentView.swift */,
 				7C8D0B1129FBC54200D2EFFE /* Assets.xcassets */,
 				7C8D0B1329FBC54200D2EFFE /* Preview Content */,
+				4BFB5A3C2A052F1F006CA1BB /* ContentViewModel.swift */,
+				4B0CCFD62A1E456C00EBADEB /* ContentViewModelCloud.swift */,
 			);
 			path = ImageClassifier;
 			sourceTree = "<group>";
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BFB5A3D2A052F1F006CA1BB /* ContentViewModel.swift in Sources */,
 				7C8D0B1029FBC54100D2EFFE /* ContentView.swift in Sources */,
+				4B0CCFD72A1E456C00EBADEB /* ContentViewModelCloud.swift in Sources */,
 				7C8D0B0E29FBC54100D2EFFE /* ImageClassifierApp.swift in Sources */,
+				4BFB5A7C2A17736E006CA1BB /* 300E.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageClassifier/Preview Content\"";
-				DEVELOPMENT_TEAM = ZBY64YCANT;
+				DEVELOPMENT_TEAM = PXCZHY8DFM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -425,6 +437,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageClassifier/Preview Content\"";
-				DEVELOPMENT_TEAM = ZBY64YCANT;
+				DEVELOPMENT_TEAM = PXCZHY8DFM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -454,6 +467,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

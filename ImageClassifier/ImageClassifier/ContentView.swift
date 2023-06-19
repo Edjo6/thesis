@@ -1,4 +1,4 @@
-////
+///
 //  ContentView.swift
 //  ImageClassifier
 //
@@ -6,44 +6,47 @@
 //
 
 import SwiftUI
+import CoreML
+import Vision
+
 
 struct ContentView: View {
     
-    @State
-    var imageClass: String? = nil
+//    @State
+//    var imageClass: String? = nil
+//
+//    let imageNames = ["Bird", "Deer", "Plane"]
     
-    let imageNames = ["Bird", "Deer", "Plane"]
+    @StateObject
+    private var viewModel: ContentViewModel
     
-    var body: some View {
-        VStack {
-            HStack(spacing: 32) {
-                ForEach(imageNames, id: \.self) { imageName in
-                    Button {
-                        
-                        classifyImage(imageName)
-                        
-                    } label: {
-                        
-                        // Image as button, triggers classifyImage() with the clicked images name
-                        Image(imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                        
-                    }
-
-                }
-            }
-
-            Text(imageClass ?? "")
-                .font(.system(size: 16))
-        }
-        .padding()
+    @StateObject
+    private var viewModelCloud: ContentViewModelCloud
+    
+    init() {
+        _viewModel = StateObject(wrappedValue: ContentViewModel())
+        _viewModelCloud = StateObject(wrappedValue: ContentViewModelCloud())
     }
     
-    func classifyImage(_ imageName: String) {
+    var body: some View {
         
-        imageClass = imageNames.randomElement()
-        
+        VStack {
+//            if let image = viewModel.currentImage {
+//                Image(uiImage: image)
+//            }
+
+            Button("Start device classification") {
+                viewModel.startClassifyModel()
+            }
+
+            Spacer()
+            
+            Button("Start cloud classification") {
+                viewModelCloud.startCloudClassification()
+                
+            }
+        }
+        .padding()
     }
 }
 
